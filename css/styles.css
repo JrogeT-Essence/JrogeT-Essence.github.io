@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "proper-font";
+    src: url("../fonts/almond_nougat/Almond\ Nougat.ttf");
+}
+
 body, html{
     height: 100%;
 }
@@ -8,4 +13,8 @@ body, html{
     background-size: cover;
     filter: blur(4px);
     -webkit-filter: blur(4px);
+}
+h1{
+    font-family: 'proper-font';
+    color: black;
 }
