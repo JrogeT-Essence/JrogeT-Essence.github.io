@@ -1,0 +1,9 @@
+TASK
+Necesito que cree un sitio web sobre lugares turísticos en Salvador, ¿de acuerdo? puedes elegir el idioma, pero te pido que te concentres en html, no tiene que ser muy elaborado debido al tiempo, ¡pero tiene que ser interactivo!
+
+  Por favor:
+- No plagiar
+- Usa las herramientas que muestran tus habilidades.
+- Usa la tarea para explorar tus fortalezas
+ 
+Recuerda: * Dedícate a tu creación, será importante para tu aprobación *
