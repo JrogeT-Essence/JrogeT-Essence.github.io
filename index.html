@@ -16,41 +16,19 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     <title>Salvador - Places</title>
-
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW8ygfx4NyNRB1vUSe64e_iDoJF-34cm8&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.036 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map-1"), {
-          zoom: 4,
-          center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
-    </script>
 </head>
 
 <body>
     <div class="bg-proper h-100 fixed-bottom"></div>
     <div class="fixed-top h-100 overflow-auto">
         <div class="container">
-            <div class="row">
+            <div class="row mb-4">
                 <h1 class="display-2 mx-auto text-justify">
                     SALVADOR - BAHIA
                 </h1>
             </div>
-            <div class="row my-4">
-                <div class="col-md-7 mx-auto">
+            <div class="row mb-4">
+                <div class="col-md-9 mx-auto">
                     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-interval="4000">
@@ -82,8 +60,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="card border-success col-10 col-md-5 mx-auto my-3 pt-3">
+            <div class="row mb-4">
+                <div id="c-1" class="card border-success col-10 col-md-5 mx-auto my-3 pt-3">
                     <img class="card-img-top" src="images/cards/c-1.jpg" alt="Card image cap" height="300">
                     <div class="card-body text-center">
                         <h5 class="card-title text-success">Pelourinho</h5>
@@ -98,7 +76,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="card border-success col-10 col-md-5 mx-auto my-3 pt-3">
+                <div id="c-2" class="card border-success col-10 col-md-5 mx-auto my-3 pt-3">
                     <img class="card-img-top" src="images/cards/c-2.jpg" alt="Card image cap" height="300">
                     <div class="card-body text-center">
                         <h5 class="card-title text-dark">Olodum Rehearsal</h5>
@@ -113,10 +91,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="card border-success col-10 col-md-5 mx-auto my-3 pt-3">
+                <div id="c-3" class="card border-success col-10 col-md-5 mx-auto my-3 pt-3">
                     <img class="card-img-top" src="images/cards/c-3.jpg" alt="Card image cap" height="300">
                     <div class="card-body text-center">
-                        <h5 class="card-title text-warning">Sunset Over Baía de Todos Santos</h5>
+                        <h5 class="card-title text-warning">Baía de Todos Santos</h5>
                         <p class="card-text text-justify">
                             As the day comes to a close, find yourself the perfect spot to watch the sunset over Baía de
                             Todos Santos. Elevador Lacerda is a beautiful old art deco elevator, and is easily the most
@@ -130,7 +108,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="card border-success col-10 col-md-5 mx-auto my-3 pt-3">
+                <div id="c-4" class="card border-success col-10 col-md-5 mx-auto my-3 pt-3">
                     <img class="card-img-top" src="images/cards/c-4.jpg" alt="Card image cap" height="300">
                     <div class="card-body text-center">
                         <h5 class="card-title text-info">Arembepe Beach</h5>
@@ -147,17 +125,15 @@
                         </a>
                     </div>
                 </div>
-                <div class="card border-success col-10 col-md-5 mx-auto my-3 pt-3">
-                    <img class="card-img-top" src="images/cards/c-4.jpg" alt="Card image cap" height="300">
+                <div id="c-5" class="card border-success col-10 col-md-5 mx-auto my-3 pt-3">
+                    <img class="card-img-top" src="images/cards/c-5.jpg" alt="Card image cap" height="300">
                     <div class="card-body text-center">
-                        <h5 class="card-title text-danger">Arembepe Beach</h5>
+                        <h5 class="card-title text-danger">Itacimirim</h5>
                         <p class="card-text text-justify">
-                            Head to the small coastal town of Arembepe, about 27mi (45km) north of Salvador. There's a
-                            small hippie village located close to the city center, where the peace and love generation
-                            still sell crafts and locally-grown produce. Locals here choose to live off nature, in mud
-                            and straw houses, and without electricity. This community housed Mick Jagger and Keith
-                            Richards in the 60s, American rocker Janis Joplin in 1970, and the Novos Baianos for
-                            extended stays on several occasions.
+                            Skip the over-popular coastal village of Praia do Forte in favor of a sleepy fishermans town
+                            called Itacimirim, which is just over an hour north of Salvador. Spread along 4mi (8km) of
+                            quiet beaches, there are natural pools for snorkeling, ideal diving conditions, fresh water
+                            rivers collide with the sea, and a few warm-water surf beaches.
                         </p>
                         <a class="btn btn-outline-danger view-more" href="#maps" id="5" role="button">
                             View more
@@ -165,21 +141,172 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mb-5">
                 <div id="maps">
-                    <div class="collapse show" id="map-1">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="collapse map-collapse" id="map-1">
+                        <div class="card border border-success">
+                            <div class="card-body bg-success">
+                                <div class="container">
+                                    <div class="row justify-content-between">
+                                        <div class="col">
+                                            <h5 class="card-title text-white">PELOURINHO</h5>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row justify-content-center">
+                                                <a class="btn btn-outline-light btn-back" href="#c-1">
+                                                    Back
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <a class="btn btn-outline-light float-right" target="_blank"
+                                                href="https://es.wikipedia.org/wiki/Pelourinho">
+                                                More info
+                                            </a>
+                                            <a class="btn btn-light float-right" target="_blank"
+                                                href="https://goo.gl/maps/tzEzv46F4qPVa3G77">
+                                                Open in google maps
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="map-1"></div>
+                            <img src="images/maps/m-1.jpeg" class="card-img-bottom" height="500">
+                        </div>
+                    </div>
+                    <div class="collapse map-collapse" id="map-2">
+                        <div class="card border border-dark">
+                            <div class="card-body bg-dark">
+                                <div class="container">
+                                    <div class="row justify-content-between">
+                                        <div class="col">
+                                            <h5 class="card-title text-white">OLODUM REHEARSAL</h5>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row justify-content-center">
+                                                <a class="btn btn-outline-light btn-back" href="#c-2">
+                                                    Back
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <a class="btn btn-outline-light float-right" target="_blank"
+                                                href="https://en.wikipedia.org/wiki/Olodum">
+                                                More info
+                                            </a>
+                                            <a class="btn btn-light float-right" target="_blank"
+                                                href="https://goo.gl/maps/kFd9ywEBUXS5VthU7">
+                                                Open in google maps
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/maps/m-2.jpeg" class="card-img-bottom" height="500">
+                        </div>
+                    </div>
+                    <div class="collapse map-collapse" id="map-3">
+                        <div class="card border border-warning">
+                            <div class="card-body bg-warning">
+                                <div class="container">
+                                    <div class="row justify-content-between">
+                                        <div class="col">
+                                            <h5 class="card-title text-white">BAÍA DE TODOS SANTOS</h5>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row justify-content-center">
+                                                <a class="btn btn-outline-light btn-back" href="#c-3">
+                                                    Back
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <a class="btn btn-outline-light float-right" target="_blank"
+                                                href="https://en.wikipedia.org/wiki/Bay_of_All_Saints">
+                                                More info
+                                            </a>
+                                            <a class="btn btn-light float-right" target="_blank"
+                                                href="https://goo.gl/maps/aCXYzahKfCgeTWjE8">
+                                                Open in google maps
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/maps/m-3.jpeg" class="card-img-bottom" height="500">
+                        </div>
+                    </div>
+                    <div class="collapse map-collapse" id="map-4">
+                        <div class="card border border-info">
+                            <div class="card-body bg-info">
+                                <div class="container">
+                                    <div class="row justify-content-between">
+                                        <div class="col">
+                                            <h5 class="card-title text-white">AREMBEPE BEACH</h5>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row justify-content-center">
+                                                <a class="btn btn-outline-light btn-back" href="#c-4">
+                                                    Back
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <a class="btn btn-outline-light float-right" target="_blank"
+                                                href="https://wikitravel.org/en/Arembepe">
+                                                More info
+                                            </a>
+                                            <a class="btn btn-light float-right" target="_blank"
+                                                href="https://goo.gl/maps/VKvhtYf124iQNK599">
+                                                Open in google maps
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/maps/m-4.jpeg" class="card-img-bottom" height="500">
+                        </div>
+                    </div>
+                    <div class="collapse map-collapse" id="map-5">
+                        <div class="card border border-danger">
+                            <div class="card-body bg-danger">
+                                <div class="container">
+                                    <div class="row justify-content-between">
+                                        <div class="col">
+                                            <h5 class="card-title text-white">ITACIMIRIM</h5>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row justify-content-center">
+                                                <a class="btn btn-outline-light btn-back" href="#c-5">
+                                                    Back
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <a class="btn btn-outline-light float-right" target="_blank"
+                                                href="https://pt.wikipedia.org/wiki/Praia_de_Itacimirim">
+                                                More info
+                                            </a>
+                                            <a class="btn btn-light float-right" target="_blank"
+                                                href="https://goo.gl/maps/B3pLFVp3ZaKfbPY28">
+                                                Open in google maps
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/maps/m-5.jpeg" class="card-img-bottom" height="500">
                         </div>
                     </div>
                 </div>
             </div>
+            <footer class="mt-5">
+                <div class="fixed-bottom bg-dark text-white text-center">
+                    <small>
+                        JrogeT - Essence
+                    </small>
+                </div>
+            </footer>
         </div>
     </div>
 
